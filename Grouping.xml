@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Vmetry Batch 11 Suite" parallel="tests">
+	<test verbose="2" name="Grouping Smoke" enabled="false">
+		<groups>
+			<run>
+				<include name="All"></include>
+				<include name="Smoke"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.vmetry.testng.Grouping" />
+		</classes>
+	</test>
+	<test verbose="2" name="Grouping Sanity" enabled="false">
+		<groups>
+			<run>
+				<include name="All"></include>
+				<include name="Sanity"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.vmetry.testng.Grouping" />
+		</classes>
+	</test>
+	<test verbose="2" name="Exclude Smoke">
+		<groups>
+			<run>
+				<include name="All"></include>
+				<include name="Regression"></include>
+				<exclude name="Smoke"></exclude>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.vmetry.testng.Grouping" />
+		</classes>
+	</test>
+</suite>

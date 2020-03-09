@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Vmetry Batch 11 Suite]">
+  <test name="Exclude Smoke(failed)">
+    <groups>
+      <run>
+        <include name="All"/>
+        <include name="Regression"/>
+        <exclude name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.vmetry.testng.Grouping">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="validateLaunchMyntra"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.vmetry.testng.Grouping -->
+    </classes>
+  </test> <!-- Exclude Smoke(failed) -->
+</suite> <!-- Failed suite [Vmetry Batch 11 Suite] -->

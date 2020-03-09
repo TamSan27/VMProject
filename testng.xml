@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Vmetry Batch 11 Suite">
+	<test verbose="2" name="Chrome Suite File Parameterization">
+		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="url"
+			value="https://www.w3schools.com/html/html_tables.asp"></parameter>
+		<parameter name="candidate" value="Francisco Chang"></parameter>
+		<classes>
+			<class name="com.vmetry.testng.SuiteFileParameterization" />
+		</classes>
+	</test>
+	<test verbose="2" name="FireFox Suite File Parameterization">
+		<parameter name="browser" value="FireFox"></parameter>
+		<parameter name="url"
+			value="https://www.w3schools.com/html/html_tables.asp"></parameter>
+		<parameter name="candidate" value="Giovanni Rovelli"></parameter>
+		<classes>
+			<class name="com.vmetry.testng.SuiteFileParameterization" />
+		</classes>
+	</test>
+</suite>

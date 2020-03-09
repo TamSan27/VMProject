@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Vmetry Batch 11 Suite">
+	<test verbose="2" name="First Testcase">
+		<classes>
+			<class name="com.vmetry.testng.FirstTestCase" />
+		</classes>
+	</test>
+	<test verbose="2" name="Annotation">
+		<classes>
+			<class name="com.vmetry.testng.Annotations" />
+		</classes>
+	</test>
+</suite>
