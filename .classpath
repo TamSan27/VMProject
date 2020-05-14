@@ -19,5 +19,15 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="E:/Tamil - Studies doc/Eclipse/selenium-server-standalone-2.53.0.jar"/>
 	<classpathentry kind="lib" path="E:/Tamil - Studies doc/Eclipse/TestNG zip.zip"/>
+	<classpathentry kind="lib" path="C:/Users/gowthaman/Downloads/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/gowthaman/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar" sourcepath="C:/Users/gowthaman/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.seleniumhq.selenium"/>
+			<attribute name="maven.artifactId" value="selenium-firefox-driver"/>
+			<attribute name="maven.version" value="3.141.59"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
