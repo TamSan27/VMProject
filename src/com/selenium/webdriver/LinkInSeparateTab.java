@@ -11,7 +11,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class NewTab {
+//Opening a link in a separate tab
+public class LinkInSeparateTab {
 
 	public static void main(String[] args) throws AWTException {
 		// TODO Auto-generated method stub
@@ -20,6 +21,9 @@ public class NewTab {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://artoftesting.com/open-a-new-tab-in-selenium-webdriver-java");
 		
+		
+		//driver.findElement(By.linkText("Automation")).click();
+		//System.out.println("Automation clicked");
 		/*
 		 * Robot robot = new Robot(); robot.keyPress(KeyEvent.VK_CONTROL); WebElement
 		 * element = driver.findElement(By.linkText("")); element.click();
@@ -29,7 +33,7 @@ public class NewTab {
 		driver.findElement(By.linkText("Automation")).sendKeys(selectLinkOpeninNewTab);
 		//by sending keys to the link, we can open in a separate tab
 		
-		driver.close();
+		
 			
 		
 		
