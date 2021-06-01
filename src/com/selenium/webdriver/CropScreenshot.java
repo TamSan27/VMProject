@@ -19,12 +19,13 @@ public class CropScreenshot {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Tamil\\git\\VMProject\\drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.w3schools.com/html/html_tables.asp");
 		driver.manage().window().fullscreen();
 		File srcImg = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(srcImg,
-				new File("/Users/user/Documents/Training/Vcentry Batch 11/SeleniumProject/file_store/Batch11.png⁩"));
+				new File("/Users/user/Documents/Training/Vcentry Batch 11/SeleniumProject/file_store/Batch11.pngâ�©"));
 		BufferedImage sourceImg, cropImg;
 		sourceImg = ImageIO.read(srcImg);
 		WebElement tbl = driver.findElement(By.id("customers"));
