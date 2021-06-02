@@ -36,6 +36,7 @@ public class HighlightedText {
 	System.out.println("print the colour of the text:"+backclr3);
 	String bold3 = higlightedEle.getCssValue("font-weight");
 	System.out.println("print the colour of the text:"+bold3);
+	System.out.println("added for testing");
 	}
 
 }
