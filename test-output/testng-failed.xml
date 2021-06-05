@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Vmetry Batch 11 Suite]">
-  <test name="Exclude Smoke(failed)">
-    <groups>
-      <run>
-        <include name="All"/>
-        <include name="Regression"/>
-        <exclude name="Smoke"/>
-      </run>
-    </groups>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.vmetry.testng.Grouping">
+      <class name="com.vmetry.testng.FirstTestCase">
         <methods>
-          <include name="afterMethod"/>
-          <include name="setUp"/>
-          <include name="validateLaunchMyntra"/>
-          <include name="tearDown"/>
+          <include name="validateInputData"/>
         </methods>
-      </class> <!-- com.vmetry.testng.Grouping -->
+      </class> <!-- com.vmetry.testng.FirstTestCase -->
     </classes>
-  </test> <!-- Exclude Smoke(failed) -->
-</suite> <!-- Failed suite [Vmetry Batch 11 Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
