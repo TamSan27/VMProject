@@ -1,4 +1,4 @@
-package com.interview.pratice;
+package com.interview.selenium.practice;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

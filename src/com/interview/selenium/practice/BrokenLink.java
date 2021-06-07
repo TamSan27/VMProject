@@ -1,4 +1,4 @@
-package com.interview.pratice;
+package com.interview.selenium.practice;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
