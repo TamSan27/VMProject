@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class FirstTestCase {
+public class RetryTest {
 	//retryAnalyzer used to rerun the falied test cases
 	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void validateInputData() {
