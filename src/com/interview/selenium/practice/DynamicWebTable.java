@@ -27,7 +27,7 @@ public class DynamicWebTable {
 		
 		System.out.println("Print the Country index:"+count);
 		String company = "Island Trading";
-		WebElement countryEle = driver.findElement(By.xpath("//td[text()='"+company+"']/following-sibling::td["+(count-1)+"]"));
+		WebElement countryEle = driver.findElement(By.xpath("//td[text()='"+company+"']/parent::tr/td["+(count)+"]"));
 		String countryName = countryEle.getText();
 		System.out.println("Country is:"+countryName);
 		
