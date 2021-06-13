@@ -8,48 +8,41 @@ import java.util.Map;
 public class RemoveDuplicates {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int temp;
-      List<Integer> lst = new ArrayList<Integer>();
-      lst.add(12);
-      lst.add(14);
-      lst.add(12);
-      lst.add(15);
-      Map<Integer,Integer> mp = new HashMap<Integer,Integer>();
-      System.out.println(lst);
-      
-       for(Integer i:lst) {
-        if(mp.containsKey(i)) {
-        	mp.put(i, mp.get(i)+1);
-        }else {
-        	mp.put(i, 1);
-        }
-  
-       }	
-       
-//       for(Map.Entry<Integer, Integer> entry:mp.entrySet()) {
-//    	 int remove =entry.getKey();
-//    	 System.out.println(remove);
-//    	   if(mp.get(remove)>1) {
-//    		   mp.remove(remove);;
-//    	   }
-//       }
-       
-       for(Integer i:lst) {
-           if(mp.containsKey(i)) {
-           if(mp.get(i)>1) {
-        	   mp.remove(i);
-           }
-     
-          }
-       System.out.println("After removing duplicate values:");
-       for(Map.Entry<Integer, Integer> entry:mp.entrySet()) {
-    	 System.out.println(entry.getKey()+"-->"+entry.getValue());  
-       }
-       
-       }
+		    
+		    	
+		    	  int a[] = { 1, 1, 2, 2, 1,3 };
+			        int n = a.length;
+		        if (n == 0 || n == 1) {
+		           System.out.println(n);
+		        }
+		  
+		        // creating another array for only storing
+		        // the unique elements
+		        int[] temp = new int[n];
+		        int j = 0;
+		  
+		        for (int i = 0; i < n - 1; i++) {
+		            if (a[i] != a[i + 1]) {
+		                temp[j++] = a[i];
+		            }
+		        }
+		  
+		        temp[j++] = a[n - 1];
+		  
+		        // Changing the original array
+		        for (int i = 0; i < j; i++) {
+		            a[i] = temp[i];
+		        }
+		  
+		        // Printing The array elements
+		        for (int i = 0; i < j; i++) {
+		            System.out.print(a[i] + " ");
+		    }
+		
+
 		
 	
 
+}
 }
 
