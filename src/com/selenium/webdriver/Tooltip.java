@@ -6,10 +6,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Tooltip {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://jqueryui.com");
 		WebElement logo = driver.findElement(By.xpath("//h2[@class='logo']/a"));

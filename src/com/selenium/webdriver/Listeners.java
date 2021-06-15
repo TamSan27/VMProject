@@ -7,10 +7,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Listeners {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
+	WebDriverManager.chromedriver().setup();
 		WebDriver wd = new ChromeDriver();
 		CustomListener lstn = new CustomListener();
 		EventFiringWebDriver driver = new EventFiringWebDriver(wd);
