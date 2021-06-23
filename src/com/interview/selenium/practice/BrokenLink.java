@@ -24,7 +24,8 @@ public class BrokenLink {
      WebDriver driver = new ChromeDriver();
      driver.get("https://www.w3schools.com/html/");
      
-     List<WebElement> urlEle = driver.findElements(By.xpath("//span[text()='HTML']/parent::h2//following-sibling::a[contains(text(),'HTML') and @target='_top']"));
+     List<WebElement> urlEle = driver.findElements(By.xpath(
+    		 "//span[text()='HTML']/parent::h2//following-sibling::a[contains(text(),'HTML') and @target='_top']"));
 	
 	for(WebElement e: urlEle) {
 		 url = e.getAttribute("href");

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.vmetry.testng.FirstTestCase">
+      <class name="com.vmetry.testng.RetryTest">
         <methods>
           <include name="validateInputData"/>
         </methods>
-      </class> <!-- com.vmetry.testng.FirstTestCase -->
+      </class> <!-- com.vmetry.testng.RetryTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
