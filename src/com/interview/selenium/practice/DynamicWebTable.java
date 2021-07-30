@@ -63,11 +63,11 @@ public class DynamicWebTable {
 			System.out.println("Row "+en.getKey()+" :"+en.getValue());
 		}
 		
-		
+		driver.quit();
 	}
-		catch(Exception e) {
+
+		finally {
 			driver.quit();
 		}
-
 }
 }
