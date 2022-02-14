@@ -19,7 +19,7 @@ public class WindowBasedPopUp {
 		driver.findElement(By.xpath("//input[@type='email']")).sendKeys("tamizhazhagan27@gmail.com");
 		driver.findElement(By.xpath("//span[text()='Next']")).click();
 		
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);//
 		
 		
 		
